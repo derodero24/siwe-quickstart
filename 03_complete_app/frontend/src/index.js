@@ -51,7 +51,7 @@ async function getInformation() {
   const res = await fetch(`${BACKEND_ADDR}/download_link`, {
     credentials: 'include',
   });
-  console.log(await res.text());
+  document.getElementById('url').textContent = await res.text();
 }
 
 const connectWalletBtn = document.getElementById('connectWalletBtn');

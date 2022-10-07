@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<style>
+  .btn {
+    width: 12rem;
+    height: 2rem;
+    margin: 1rem;
+  }
+</style>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -6,8 +13,9 @@
   </head>
 
   <body>
-    <div><button id="connectWalletBtn">Connect wallet</button></div>
-    <div><button id="siweBtn">Sign-in with Ethereum</button></div>
-    <div><button id="infoBtn">Get session information</button></div>
+    <div><button id="connectWalletBtn" class="btn">Connect wallet</button></div>
+    <div><button id="siweBtn" class="btn">Sign-in with Ethereum</button></div>
+    <div><button id="infoBtn" class="btn">Generate Download Link</button></div>
+    <p id="url"></p>
   </body>
 </html>
